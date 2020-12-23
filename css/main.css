@@ -1,0 +1,277 @@
+* {padding: 0;margin: 0;}
+ul,li {
+    list-style: none;
+}
+.tab {
+    overflow: hidden;
+    width:1920px;
+    height:100%;
+}
+.tabnews {
+    overflow-x: hidden;
+    width:1920px;
+    height:871px;
+}
+.codeBox{
+    background-color:#222222;
+    border-color: #444444;
+    border-style: solid;
+    border-width: 1px;
+    margin:auto;
+    width:1550px;
+    padding:25px;
+    margin-top:15px;
+}
+.titleBox {
+    float: left;
+    background-color: #141414;
+    height: 100%;
+    position: relative;
+    border-width: 1px;
+}
+.titleList {
+    margin: auto 0;
+    position: relative;
+    z-index: 2;
+}
+.titleList li span{
+    color: #ffffff;
+    padding: 20px;
+    width: 100px;
+    display: block;
+}
+.current span{
+    color: #3e8cff !important;
+}
+.contentBox {
+    float: right;
+    height: 100%;
+    background-color: #080808;
+}
+.contentList {
+    background-color: #080808;
+}
+.contentList li {
+    height: 100%;
+}
+.contentList li p {
+    color: #fff;
+}
+.backBox {
+    background-color: #143555;
+    z-index:0;
+    width: 120px;
+    border-radius: 20px;
+    margin-left: 5px;
+    position: absolute;
+}
+.backBox::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+    top: -15px;
+    left: calc(50% - 8px);
+}
+.backBox::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #fff;
+    bottom: -15px;left: calc(50% - 8px);
+}
+.backBox img {
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+}
+.backBox img:first-child{
+    top: -20px;
+}
+.backBox img:last-child{
+    left: calc(50% - 8px);
+    bottom: -20px;
+}
+.ripple {
+    position: relative;
+    /*//隐藏溢出的径向渐变背景*/
+    overflow: hidden;
+}
+
+.ripple:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    /*//设置径向渐变*/
+    background-image: radial-gradient(circle, #FFFFFF 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform .3s, opacity .5s;
+}
+
+.ripple:active:after {
+    transform: scale(0, 0);
+    opacity: .3;
+    /*//设置初始状态*/
+    transition: 0s;
+}
+.btn-sign{
+    border-width:0px;
+    background:url("../images/菜单按钮.png") no-repeat 0 0;
+    outline: none;
+    width: 88px;
+    height: 39px;
+}
+#container {
+    width: 500px;
+    height: 820px;
+    margin: 0 auto;
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+.ip {
+    width: 50%;
+    height: 42px;
+    padding-left: 13px;
+}
+.bt1 {
+    height: 42px;
+    width: 42px;
+    cursor: pointer;
+    margin-left: 0%;
+}
+div.search {
+    padding: 30px 0;
+    width: 100%;
+    height: 5%;
+    margin-left: 13%;
+}
+.bar8 {
+    background: transparent;
+}
+.bar8 form {
+    height: 42px;
+}
+.bar8 input {
+    width: 0;
+    padding: 0 42px 0 15px;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    transition: .3s linear;
+    position: absolute;
+    top: 90px;
+    z-index: 2;
+    left: 560px;
+}
+.bar8 input:focus {
+    left: 610px;
+    width: 300px;
+    z-index: 1;
+    border-bottom: 1px solid #F9F0DA;
+}
+input{
+    color:#fff;
+}
+input::placeholder{
+    color: #2f2f2f;
+    font-size: 14px;
+    font-weight: normal;
+}
+.bar8 button {
+    background: #683B4D;
+    top: 15%;
+    right: 0;
+}
+.bar8 button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #F9F0DA;
+}
+.t{
+    border-bottom: #464646;
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
+}
+.inp{
+    background: transparent;
+    font-family: 黑体;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    z-index: 1;
+}
+.inp:focus{
+    z-index: 1;
+    border-bottom: 1px solid #5aa8ff;
+}
+.text{
+    background: transparent;
+    font-family: 黑体;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    width: 100%;
+    resize: none;
+    border-color:#464646 ;
+}
+.text::placeholder{
+    color: #2f2f2f;
+    font-size: 14px;
+    font-weight: normal;
+}
+select
+{
+    color:#FFFFFF ;
+    font-size: 16px;
+    width: 200px;
+    height: 30px;
+    background-color: #1d1d1d;
+}
+.file {
+    position: relative;
+    display: inline-block;
+    background: #1d1d1d;
+    border: 1px solid #464646;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    font-family: 黑体;
+    color: #ffffff;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file:hover {
+    background: #585858;
+    border-color: #464646;
+    color: #ffffff;
+
+    text-decoration: none;
+}

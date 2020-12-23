@@ -1,0 +1,146 @@
+* {padding: 0;margin: 0;}
+ul,li {
+    list-style: none;
+}
+.tab {
+    overflow: hidden;
+    width:760px;
+    margin-left: 580px;
+    margin-top: 10%;
+}
+.titleBox {
+    float: left;
+    background-color: #26282a;
+    height: 50%;
+    position: relative;
+    border-width: 1px;
+}
+.titleList {
+    margin: auto 0;
+    position: relative;
+    z-index: 2;
+}
+.titleList li span{
+    color: #ffffff;
+    padding: 20px;
+    width: 100px;
+    display: block;
+}
+.current span{
+    color: #3e8cff !important;
+}
+.contentBox {
+    float: right;
+    height: 50%;
+    background-color: #1d1d1f;
+}
+.contentList {
+    background-color: #1d1d1f;
+}
+.contentList li {
+    height: 100%;
+}
+.contentList li p {
+    color: #fff;
+}
+.backBox {
+    background-color: #143555;
+    z-index:0;
+    width: 75px;
+    border-radius: 20px;
+    margin-left: 5px;
+    position: absolute;
+}
+.backBox::before{
+    display: none;
+}
+.backBox::after{
+    display: none;
+}
+.backBox img {
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+}
+.backBox img:first-child{
+    top: -20px;
+}
+.backBox img:last-child{
+    left: calc(50% - 8px);
+    bottom: -20px;
+}
+.t{
+    border-bottom: #464646;
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
+}
+.inp{
+    background: transparent;
+    font-family: 黑体;
+    font-weight: bold;
+    font-size: 20px;
+    width: 50%;
+    z-index: 1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.inp:focus{
+    z-index: 1;
+    border-bottom: 1px solid #5aa8ff;
+}
+input{
+    color:#fff;
+}
+input::placeholder{
+    color: #2f2f2f;
+    font-size: 18px;
+    font-weight: normal;
+}
+input, button {
+    border: none;
+    outline: none;
+}
+.file {
+    position: relative;
+    display: inline-block;
+    background: #343434;
+    border: 1px solid #464646;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    font-family: 黑体;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file:hover {
+    background: #585858;
+    border-color: #464646;
+    color: #ffffff;
+
+    text-decoration: none;
+}
+select{
+    color:#FFFFFF ;
+    font-size: 16px;
+    width: 200px;
+    height: 30px;
+    background-color: #1d1d1d;
+}
+.cw{
+    background: transparent;
+    color: #75b7ff;
+}
+.cw:hover{
+    color: #4085e8;
+}
